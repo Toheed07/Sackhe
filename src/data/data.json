@@ -1,21 +1,21 @@
 {
+  "logo":"img/image.png",
   "Header": {
-    "title": "We are a Landing Page",
-    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sed commodo nibh ante facilisis bibendum."
+    "title": "Presenting Our Eco-Friendly Solutions",
+    "paragraph": "Transformation of Waste Handling"
   },
   "About": {
-    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "paragraph1": "At Sackhe Technologies Pvt Ltd, we specialize in developing innovative and sustainable solutions that address critical challenges across various industries. Our core expertise lies in the design and implementation of advanced technologies that promote environmental sustainability, enhance operational efficiency, and contribute to public health and safety.",
+    "paragraph2": "We focus on creating cutting-edge products and systems, such as emission-controlled incinerators and eco-friendly waste management solutions, that are both scalable and adaptable to diverse environments. Our commitment to research and development drives us to continuously push the boundaries of technology, ensuring that our solutions meet the highest standards of performance and compliance.",
+    "paragraph3": "In addition to our technical innovations, we prioritize building strong partnerships with communities, businesses, and governments to deliver impactful solutions that align with global sustainability goals. Through our work, we aim to foster a culture of innovation, responsibility, and excellence, helping to shape a more sustainable and equitable future for all.",
     "Why": [
-      "Lorem ipsum dolor",
-      "Tempor incididunt",
-      "Lorem ipsum dolor",
-      "Incididunt ut labore"
+      "Local Communities",
+      "Municipal Authorities",
+      "Public Health"
     ],
     "Why2": [
-      "Aliquip ex ea commodo",
-      "Lorem ipsum dolor",
-      "Exercitation ullamco",
-      "Lorem ipsum dolor"
+      "Environmental Ecosystems",
+      "Future Generations"
     ]
   },
   "Gallery": [
@@ -131,54 +131,115 @@
   ],
   "Team": [
     {
-      "img": "img/team/01.jpg",
-      "name": "John Doe",
-      "job": "Director"
+      "img": "img/team/01.png",
+      "name": "Tuti Sandhya",
+      "job": "Founder & Director"
     },
     {
-      "img": "img/team/02.jpg",
-      "name": "Mike Doe",
-      "job": "Senior Designer"
+      "img": "img/team/02.png",
+      "name": "Charishma Tadiboina",
+      "job": "Founder & Director"
     },
     {
-      "img": "img/team/03.jpg",
-      "name": "Jane Doe",
-      "job": "Senior Designer"
+      "img": "img/team/03.png",
+      "name": "Venumula Varsitha Reddy",
+      "job": "Co-Founder & CTO"
     },
     {
-      "img": "img/team/04.jpg",
-      "name": "Karen Doe",
-      "job": "Project Manager"
+      "img": "img/team/04.png",
+      "name": "Vanekari Jahnavi",
+      "job": "Co-Founder"
+    },
+    {
+      "img": "img/team/05.png",
+      "name": "Keerthana Reddy Pandyam",
+      "job": " Co-Founder & Innovation Director"
+    },
+    {
+      "img": "img/team/06.png",
+      "name": "Appala Rakesh Goud",
+      "job": "Co-Founder & CEO"
     }
   ],
+  "Advisory": [
+    {
+      "img": "img/team/07.jpeg",
+      "name": "Mr. Prashant Lingam",
+      "job": "Social Entrepreneur, Co-founder at Bamboo House India, Entrepreneurship, Bamboo, Social Impact, IVLP"
+    },
+    {
+      "img": "img/team/08.jpeg",
+      "name": "Col B. S. Rao",
+      "job": "CEO SRiX"
+    }
+  ],
+  "Team-bg": [
+    {
+      "img": "img/team/09.jpeg"
+        }
+  ],
   "Contact": {
-    "address": "4321 California St, San Francisco, CA 12345 ",
-    "phone": "+1 123 456 1234",
-    "email": "info@company.com",
+    "address": "Near Ramalayam, Chaitinyapuri, Dilsukhnagar, Hyderabad-500060",
+    "phone": "9912864443",
+    "email": "sandhyatuti95@gmail.com",
     "facebook": "fb.com",
     "twitter": "twitter.com",
-    "youtube": "youtube.com"
+    "youtube": "youtube.com",
+    "bg": "img/team/09.jpeg"
   },
   "Features": [
     {
       "icon": "fa fa-comments-o",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
-    },
-    {
-      "icon": "fa fa-bullhorn",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
-    },
-    {
-      "icon": "fa fa-group",
-      "title": "Lorem ipsum",
+      "title": "Awareness Sessions and Campaigns",
       "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
     },
     {
       "icon": "fa fa-magic",
-      "title": "Lorem ipsum",
+      "title": "Girlup",
+      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+    },
+    {
+      "icon": "fa fa-group",
+      "title": "Her dreams (girl education)",
+      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+    },
+    {
+      "icon": "fa fa-magic",
+      "title": "Cycle of Change (menstruation)",
+      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+    },
+    {
+      "icon": "fa fa-magic",
+      "title": "SelfShine (importance of self love,self care, mental health",
+      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+    },
+    {
+      "icon": "fa fa-bullhorn",
+      "title": "EmpowerHer (related to women empowerment)",
       "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
     }
-  ]
+  ],
+  "Products": 
+    {
+      "image1": "img/team/01.jpg",
+      "title1": "Menstrual Incinerator",
+      "detailDescription1": "Our core product, the Menstrual Incinerator, is a cutting-edge method of disposing of sanitary waste in a sustainable and safe manner. This incinerator, whose design prioritizes environmental friendliness, lessens the impact of menstrual waste on the environment, guaranteeing secure disposal while enhancing public health and cleanliness. It's perfect for establishments like offices, public buildings, colleges, and schools who want to use ethical waste management techniques.",
+      "image2": "img/team/01.jpg",
+      "title2": "Solid waste Management System",
+      "detailDescription2": "We provide an organized and effective way to handle different kinds of waste with our Solid Waste Management System. With this method, solid waste is managed efficiently, resulting in a cleaner and healthier community. Waste segregation and collection are also handled responsibly. Municipalities, apartment buildings, and industrial environments are the ideal settings for this approach.",
+      "accordionData": [
+        {
+          "title": "Technical Support",
+          "content": "We understand how important it is for waste management to run smoothly. To guarantee that your systems run smoothly, our committed technical support staff is always hand to handle any technical problems. Our staff makes sure your technology functions properly by fixing software bugs and offering on-site technical support."
+        },
+        {
+          "title": "Maintenance Services",
+          "content": "The durability and effectiveness of your waste management systems depend on proper maintenance. Comprehensive services, such as regular inspections, preventive maintenance, and emergency repairs, are offered by our knowledgeable maintenance team. We provide continuous and dependable performance by keeping your equipment in optimal condition. Waste Management advisory: Sackhe provides knowledgeable advisory services to assist businesses in creating and putting into practice efficient waste management plans. Whether you're building a new facility or streamlining current operations, our team of experts offers customized guidance to support your sustainability objectives."
+        },
+        {
+          "title": "Programs for Training and Awareness",
+          "content": "Effective waste management depends on education. To teach your team and the community about sustainable waste management and best practices in trash segregation and disposal, we offer training and awareness programs. The purpose of these programs is to make sure that everyone participates in waste management and to promote a culture of environmental responsibility."
+        }
+      ]
+    }
 }

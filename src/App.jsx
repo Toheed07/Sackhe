@@ -4,10 +4,13 @@ import { Header } from "./components/header";
 import { Features } from "./components/features";
 import { About } from "./components/about";
 import { Services } from "./components/services";
-import { Gallery } from "./components/gallery";
+// import { Gallery } from "./components/gallery";
 import { Testimonials } from "./components/testimonials";
 import { Team } from "./components/Team";
 import { Contact } from "./components/contact";
+import Product from "./components/product";
+import Footer from "./components/footer";
+import KeyThrustAreas from "./components/KeyThrustAreas";
 import JsonData from "./data/data.json";
 import SmoothScroll from "smooth-scroll";
 import "./App.css";
@@ -25,15 +28,18 @@ const App = () => {
 
   return (
     <div>
-      <Navigation />
+      <Navigation data={landingPageData.logo} />
       <Header data={landingPageData.Header} />
-      <Features data={landingPageData.Features} />
+      {/* <Features data={landingPageData.Features} /> */}
       <About data={landingPageData.About} />
-      <Services data={landingPageData.Services} />
-      <Gallery data={landingPageData.Gallery} />
-      <Testimonials data={landingPageData.Testimonials} />
-      <Team data={landingPageData.Team} />
+      <Services data={landingPageData.Features} />
+      <Product data={landingPageData.Products} />
+      <KeyThrustAreas data={landingPageData.Products} />
+      {/* <Gallery data={landingPageData.Gallery} /> */}
+      {/* <Testimonials data={landingPageData.Testimonials} /> */}
+      <Team data={landingPageData} />
       <Contact data={landingPageData.Contact} />
+      <Footer data={landingPageData.Contact}/>
     </div>
   );
 };

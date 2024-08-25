@@ -3,12 +3,12 @@ import React from "react";
 export const About = (props) => {
   const statements = [
     {
-      title: "Vision Statement",
+      title: "Vision",
       content:
         "To become a global leader in sustainable menstrual and solid waste management, setting new standards for environmental responsibility and public health. We envision a world where safe, efficient, and environmentally conscious solutions are accessible to all, breaking down barriers to health and hygiene while fostering a culture of sustainability and innovation in waste management.",
     },
     {
-      title: "Mission Statement",
+      title: "Mission",
       content:
         "To revolutionize menstrual and solid waste management through innovative, eco-friendly incineration technology that ensures the health and well-being of communities while protecting the environment. We are committed to promoting gender equity, reducing environmental impact, and advancing sustainable waste disposal practices that empower individuals and contribute to a cleaner, healthier planet.",
     },

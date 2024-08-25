@@ -97,6 +97,7 @@ export const About = (props) => {
                   color: colors.primary,
                   marginBottom: "20px",
                   fontSize: "1.8rem",
+                  fontWeight: "bold",
                   textAlign: "center",
                 }}
               >
@@ -106,7 +107,8 @@ export const About = (props) => {
                 style={{
                   color: colors.text,
                   lineHeight: "1.6",
-                  fontSize: "1rem",
+                  fontSize: "1.4rem",
+                  fontWeight: "bold"
                 }}
               >
                 {statement.content}

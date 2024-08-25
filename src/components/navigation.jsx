@@ -18,11 +18,17 @@ export const Navigation = (props) => {
             <span className="icon-bar"></span>{" "}
             <span className="icon-bar"></span>{" "}
           </button>
-          <a className="navbar-brand page-scroll" href="#page-top">
-            <strong>
-              <i>Sackhe</i>
-            </strong>
-          </a>{" "}
+          <a className="navbar-brsand page-scroll" href="#page-top">
+            <img
+              src={props.data}
+              alt="Logo"
+              style={{ 
+                width: "100px",
+                // height: "100px",
+                objectFit: "fill"
+               }}
+            />
+          </a>
         </div>
 
         <div

@@ -4,10 +4,12 @@ export const Header = (props) => {
   return (
     <header id="header">
       <div className="intro">
-        <div className="overlay">
+        <div className="intro-background"></div>
+        <div className="overlay"></div>
+        <div className="intro-content">
           <div className="container">
             <div className="row">
-              <div className="col-md-8 col-md-offset-2 intro-text">
+              <div className="col-12 intro-text">
                 <h1>
                   {props.data ? props.data.title : "Loading"}
                   <span></span>
@@ -18,7 +20,7 @@ export const Header = (props) => {
                   className="btn btn-custom btn-lg page-scroll"
                 >
                   See More
-                </a>{" "}
+                </a>
               </div>
             </div>
           </div>

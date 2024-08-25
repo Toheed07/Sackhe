@@ -1,9 +1,9 @@
 :root {
-  --color-primary: #8E44AD;
-  --color-secondary: #FFC300;
-  --color-background: #F9E79F;
-  --color-text: #4A235A;
-  --color-white: #FFFFFF;
+  --color-primary: #8e44ad;
+  --color-secondary: #ffc300;
+  --color-background: #f9e79f;
+  --color-text: #4a235a;
+  --color-white: #ffffff;
 }
 body,
 html {
@@ -50,13 +50,13 @@ p.intro {
   line-height: 24px;
 }
 a {
-  color: #8E44AD;
+  color: #8e44ad;
   font-weight: 400;
 }
 a:hover,
 a:focus {
   text-decoration: none;
-  color: #8E44AD;
+  color: #8e44ad;
 }
 ul,
 ol {
@@ -111,7 +111,7 @@ hr {
   bottom: -1px;
   width: 0;
   height: 2px;
-  background: linear-gradient(to right, #FFC300 0%, #F9E79F 100%);
+  background: linear-gradient(to right, #ffc300 0%, #f9e79f 100%);
   content: "";
   transition: width 0.2s;
 }
@@ -132,7 +132,7 @@ hr {
   bottom: -1px !important;
   width: 100% !important;
   height: 2px !important;
-  background: linear-gradient(to right, #FFC300 0%, #F9E79F 100%) !important;
+  background: linear-gradient(to right, #ffc300 0%, #f9e79f 100%) !important;
   content: "" !important;
   transition: width 0.2s !important;
 }
@@ -142,10 +142,10 @@ hr {
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
   background-color: #fff;
-  border-color: #8E44AD;
+  border-color: #8e44ad;
 }
 .navbar-default .navbar-toggle:hover > .icon-bar {
-  background-color: #8E44AD;
+  background-color: #8e44ad;
 }
 .section-title {
   margin-bottom: 70px;
@@ -159,7 +159,7 @@ hr {
 .section-title h2::after {
   position: absolute;
   content: "";
-  background: linear-gradient(to right, #F9E79F 0%, #FFC300 100%);
+  background: linear-gradient(to right, #f9e79f 0%, #ffc300 100%);
   height: 4px;
   width: 60px;
   bottom: 0;
@@ -173,8 +173,8 @@ hr {
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
   color: #fff;
-  background-color: #8E44AD;
-  background-image: linear-gradient(to right, #F9E79F 0%, #FFC300 100%);
+  background-color: #8e44ad;
+  background-image: linear-gradient(to right, #f9e79f 0%, #ffc300 100%);
   padding: 14px 34px;
   letter-spacing: 1px;
   margin: 0;
@@ -191,7 +191,7 @@ hr {
 .btn-custom.active {
   color: #fff;
   background-image: none;
-  background-color: #F9E79F;
+  background-color: #f9e79f;
 }
 .btn:active,
 .btn.active {
@@ -212,17 +212,43 @@ a:focus,
 }
 /* Header Section */
 .intro {
-  display: table;
+  position: relative;
   width: 100%;
   height: 100vh;
   padding: 0;
-  background: url(../img/image.png) center center no-repeat;
+  overflow: hidden;
+}
+
+.intro-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../img/10.jpeg) center center no-repeat;
   background-color: #e5e5e5;
-  /* object-fit: contain; */
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
   background-size: cover;
-  -o-background-size: cover;
+  z-index: -1;
+}
+
+.intro-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 .intro .overlay {
   background: rgba(0, 0, 0, 0.2);
@@ -238,7 +264,7 @@ a:focus,
 }
 .intro h1 span {
   font-weight: 800;
-  color: #8E44AD;
+  color: #8e44ad;
 }
 .intro p {
   color: #fff;
@@ -253,6 +279,67 @@ header .intro-text {
   padding-bottom: 200px;
   text-align: center;
 }
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .intro-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/10.jpeg) center center no-repeat;
+    object-fit: fit;
+    /* background-color: #e5e5e5; */
+    /* background-size: cover; */
+    z-index: -1;
+  }
+
+  .intro-text h1 {
+    font-size: 2rem;
+  }
+
+  .intro-text p {
+    font-size: 0.9rem;
+  }
+
+  .btn-custom {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .intro-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    margin-left: 30px;
+    background: url(../img/10.jpeg) center center no-repeat;
+    object-fit: fit;
+    /* background-color: #e5e5e5; */
+    background-size: contain;
+    z-index: -1;
+  }
+
+  .intro-text h1 {
+    font-size: 1.5rem;
+  }
+
+  .intro-text p {
+    font-size: 1.2rem;
+  }
+
+  .btn-custom {
+    font-size: 1rem;
+    padding: 6px 12px;
+  }
+}
 /* Features Section */
 #features {
   background: #f6f6f6;
@@ -266,7 +353,7 @@ header .intro-text {
   height: 100px;
   padding: 30px 0;
   border-radius: 50%;
-  background: linear-gradient(to right, #FFC300 0%, #F9E79F 100%);
+  background: linear-gradient(to right, #ffc300 0%, #f9e79f 100%);
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
 }
 /* About Section */
@@ -285,7 +372,7 @@ header .intro-text {
 #about h2::after {
   position: absolute;
   content: "";
-  background: linear-gradient(to right, #F9E79F 0%, #FFC300 100%);
+  background: linear-gradient(to right, #f9e79f 0%, #ffc300 100%);
   height: 4px;
   width: 60px;
   bottom: 0;
@@ -300,7 +387,7 @@ header .intro-text {
 #about .about-text li:before {
   content: "\f00c";
   font-family: "FontAwesome";
-  color: #8E44AD;
+  color: #8e44ad;
   font-size: 11px;
   font-weight: 300;
   padding-right: 8px;
@@ -319,7 +406,7 @@ header .intro-text {
 /* Services Section */
 #services {
   padding: 100px 0;
-  background: linear-gradient(to right, #FFC300 0%, #F9E79F 100%);
+  background: linear-gradient(to right, #ffc300 0%, #f9e79f 100%);
   color: #fff;
 }
 #services .service-desc {
@@ -343,7 +430,7 @@ header .intro-text {
   width: 120px;
   height: 120px;
   padding: 40px 0;
-  background: linear-gradient(to right, #FFC300 0%, #F9E79F 100%);
+  background: linear-gradient(to right, #ffc300 0%, #f9e79f 100%);
   border-radius: 50%;
   color: #fff;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
@@ -457,7 +544,11 @@ header .intro-text {
 }
 #team .team-img {
   width: 240px;
+  height: 240px; /* Set the height to match the width to enforce a square ratio */
+  object-fit: cover; /* Cover will crop the image to fit the container */
+  border-radius: 10%; /* Optional: Makes the image circular */
 }
+
 #team .thumbnail {
   background: transparent;
   border: 0;
@@ -466,10 +557,52 @@ header .intro-text {
   padding: 10px 0 0;
   color: #888;
 }
+/* Products Section */
+#product {
+  padding: 100px 0;
+}
+
+#product h4 {
+  margin: 5px 0;
+}
+
+#product .product-img {
+  width: 100%; /* Set width to 100% to make it responsive */
+  max-width: 240px; /* Optional: Set a maximum width */
+  height: auto; /* Let the height adjust automatically to maintain aspect ratio */
+  object-fit: contain;
+  border-radius: 10%;
+}
+
+#product .thumbnail {
+  background: transparent;
+  border: 0;
+  text-align: center; /* Center the content */
+}
+
+#product .thumbnail .caption {
+  padding: 10px 0 0;
+  color: #888;
+}
+
+#row .team {
+  padding: 15px;
+}
+
+/* Add responsive grid behavior */
+@media (max-width: 767px) {
+  #row .team {
+    flex: 0 0 100%; /* Make each column take up full width on small screens */
+    max-width: 100%;
+  }
+}
+
+
+
 /* Contact Section */
 #contact {
   padding: 100px 0 60px;
-  background: linear-gradient(to right, #FFC300 0%, #F9E79F 100%);
+  background: linear-gradient(to right, #ffc300 0%, #f9e79f 100%);
   color: rgba(255, 255, 255, 0.75);
 }
 #contact .section-title {
@@ -589,7 +722,7 @@ label {
   transition: all 0.3s;
 }
 #contact .social i.fa:hover {
-  color: #8E44AD;
+  color: #8e44ad;
   background: #fff;
 }
 /* Footer Section*/
@@ -602,10 +735,10 @@ label {
   font-size: 14px;
 }
 #footer a {
-  color: #8E44AD;
+  color: #8e44ad;
 }
 #footer a:hover {
-  border-bottom: 2px solid #8E44AD;
+  border-bottom: 2px solid #8e44ad;
 }
 
 @media (max-width: 768px) {

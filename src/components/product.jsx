@@ -4,11 +4,12 @@ import "react-bootstrap-accordion/dist/index.css";
 
 const Product = (props) => {
   return (
-    <div className="text-center">
+    <div   id="product" className="text-center">
       <div
-        id="products"
+      
         style={{
-          margin: "50px",
+          marginTop: "50px",
+          marginBottom: "50px",
         }}
         className="container my-5"
       >
@@ -17,7 +18,7 @@ const Product = (props) => {
             <img
               src={props.data?.image1}
               alt="Product"
-              className="img-fluid rounded shadow"
+              className="product-img  rounded  shadow"
             />
           </div>
 
@@ -44,12 +45,19 @@ const Product = (props) => {
       </div>
 
       <div
-        id="products"
-        style={{
+     style={{
+          marginTop: "50px",
           marginBottom: "50px",
         }}
         className="container my-5"
       >
+       <div className="col-lg-6">
+            <img
+              src={props.data?.image2}
+              alt="Product"
+              className="product-img  rounded shadow"
+            />
+          </div>
         <div className="row g-4">
         
           <div className="col-lg-6">
@@ -72,13 +80,6 @@ const Product = (props) => {
             <button className="btn btn-warning btn-lg btn-block mt-6">View Details</button>
           </div>
 
-          <div className="col-lg-6">
-            <img
-              src={props.data?.image2}
-              alt="Product"
-              className="img-fluid rounded shadow"
-            />
-          </div>
 
         </div>
       </div>
